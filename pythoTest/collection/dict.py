@@ -13,9 +13,10 @@ dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'};
 
 dict['Age'] = 8; # update existing entry
 dict['School'] = "DPS School"; # Add new entry
-
 print("dict['Age']: ", dict['Age'])
 print("dict['School']: ", dict['School'])
+dict.setdefault("Name","aaa")               #setdefault() 如果键不存在于字典中，将会添加键并将值设为默认值
+print("dict['Name']: ",dict['Name'])
 
 
 
