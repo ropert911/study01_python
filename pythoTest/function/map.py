@@ -16,7 +16,7 @@ for i in l2:
 l3 = map(lambda x, y: (x ** y, x + y), [1, 2, 3], [1, 2, 3])
 print("list3")
 for i in l3:
-    print(i, "type=", type(i))
+    print(i, "type=", i[0],i[1])
 
 l4 = map(lambda x, y: (x ** y, x + y), [1, 2, 3], [1, 2])
 print("list4")

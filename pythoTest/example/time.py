@@ -1,5 +1,5 @@
 import time;  # 引入time模块
-import calendar
+
 
 ticks = time.time()
 print("当前时间戳为:", ticks)
@@ -22,12 +22,36 @@ a = "Sat Mar 28 22:24:24 2016"
 print(time.mktime(time.strptime(a, "%a %b %d %H:%M:%S %Y")))
 
 # 日历
+import calendar
+print("")
+print("")
+print("=======  日历：calendar  ===========")
 cal = calendar.month(2016, 1)
 print("以下输出2016年1月份的日历:")
 print(cal)
 
+
+
+print("")
+print("")
+print("=======  datetime  ===========")
 import datetime
 
 s = datetime.date.today();
-print(s)
-print(s + datetime.timedelta(days=1));
+print("datetime.date.today() = ", s)
+print("加一天 ", s + datetime.timedelta(days=1));
+
+start_time = 20180816010203
+# start_time=0
+time = datetime.datetime.strptime(str(start_time), '%Y%m%d%H%M%S') if start_time else None
+print("strptime-----")
+print(time)
+print(time.date())
+print(time.time())
+
+
+
+now_time = 1533300000000
+time = datetime.datetime.fromtimestamp(float(now_time) / 1000) if now_time else datetime.datetime.today()
+print("fromtimestamp-----")
+print(time)

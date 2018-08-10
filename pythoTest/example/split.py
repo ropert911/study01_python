@@ -1,13 +1,3 @@
-if isinstance(1, int):
-    print("true :   isinstance (1,int)")
-else:
-    print("false :   isinstance (1,int)")
-
-if isinstance("aaaa", str):
-    print("true :   isinstance (1,str)")
-else:
-    print("false :   isinstance (1,str)")
-
 # 默认和空格分开
 para = "aaa=bbb bbb=ccc aaa"
 spaceResult = para.split()
