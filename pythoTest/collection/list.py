@@ -16,6 +16,8 @@ print(list)
 list1 = ['physics', 'chemistry', 1997, 2000]
 
 print(list1)
+for i in list1:
+    print("=======",i)
 del list1[2]
 print("After deleting value at index 2 : ")
 print(list1)
