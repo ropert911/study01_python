@@ -32,6 +32,9 @@ class Rest:
         for i in ap_list:
             print(" topId", i.get('topId'), " total:", i.get('total'),
                   'enableAp', i.get('enableAp'), 'disAp', i.get('disAp'))
-
+    def mutihost(self):
+        user_list = self.get("http://192.168.20.48:10015/inner/area/area/searchTopAreaList?userid=1")
+        print("aaaa",user_list)
 ism = Rest()
-ism.ap_statistic()
+# ism.ap_statistic()
+ism.mutihost()
