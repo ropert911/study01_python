@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # fileter 过滤函数
 def is_odd(n):
     return n % 2 == 1
