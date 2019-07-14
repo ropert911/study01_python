@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+
+dict4 = {}  # 定义空字典
+dict5 = dict()  # 定义空字典
+
 dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'};
 
 print("dict['Name']: ", dict['Name'])
@@ -5,7 +10,6 @@ print("dict['Age']: ", dict['Age'])
 
 dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'};
 # print("dict['Alice']: ", dict['Alice'])
-
 
 
 dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'};
@@ -34,5 +38,5 @@ for kv in a.items():
     print("遍历字典项==={}".format(kv))
 for key, value in a.items():
     print("遍历字典健值1==" + key + ':' + value)
-for (key,value) in a.items():
-    print("遍历字典健值2==" + key+':'+value)
+for (key, value) in a.items():
+    print("遍历字典健值2==" + key + ':' + value)
