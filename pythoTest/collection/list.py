@@ -23,3 +23,8 @@ for i in list1:
 del list1[2]
 print("After deleting value at index 2 : ")
 print(list1)
+
+
+data = []
+if data[i] == None:
+    data.append(list())
