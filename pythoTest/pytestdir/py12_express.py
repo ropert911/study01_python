@@ -56,7 +56,7 @@ sms="abcIot/12345d78)"
 print "转义方式:{}".format(re.findall('Iot\/(\\w+)\)', sms))
 print "非转义方式:{}".format(re.findall(r'Iot/(\w+)\)', sms))
 
-body=' "邮件" : 254323626@qq.com \r\n "设备id" :  2345d78  \r\n  "发送人" :   肖迁   \r\n'
+body=' "邮件" : 254323626@qq.com \r\n "设备id" :  2345d78  \r\n  "发送人" :   肖迁   \r\n 	"告警设备" : 30000000500001803  \r\n'
 print "获取全部信息1111======:{}".format(re.findall('(\\S+)\\s+:\\s+(\\S+)\\s+', body))
 print "获取全部信息22222======:{}".format(re.findall(':\\s+(\\S+)\\s+', body))
 print "获取全部信息2222======:{}".format(re.findall(':\\s+(\\S+)\\s+\r\n', body))
@@ -65,7 +65,8 @@ print "获取全部信息333333======:{}".format(re.findall('设备id"\\s+:\\s+(
 
 msg=body.split("\r\n")
 for m in msg:
-    if "设备id" in m:
+    if "告警设备" in m:
         print m
-        print "获取设备ID22222222222:{}".format(re.findall('设备id"\\s+:\\s+(\\w+)\\s+', m))
+        print "获取设备IDaa:{}".format(re.findall(':\\s+(\\w+)\\s+', m))
+        print "获取设备ID2aa:{}".format(re.findall(':\\s+(\\w+)\\s+', m))
 
