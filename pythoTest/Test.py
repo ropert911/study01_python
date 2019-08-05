@@ -1,6 +1,3 @@
-#@property
-#参考https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001386820062641f3bcc60a4b164f8d91df476445697b9e000
-#@staticmethod 类静态方法
-#http://www.runoob.com/python/python-func-staticmethod.html
-#@abstractmethod 类抽像方法
-#class AHiveDataHandler(ABC)  抽象类
+# -*- coding: utf-8 -*-
+
+print "\xe5\xaf\x86\xe7\xa0\x81\xe9\x94\x99\xe8\xaf\xaf\xe6\xac\xa1\xe6\x95\xb0\xe5\xa4\xaa\xe5\xa4\x9a\xef\xbc\x8c\xe8\xaf\xb71\xe5\x88\x86\xe9\x92\x9f\xe5\x90\x8e\xe5\x86\x8d\xe8\xaf\x95"
